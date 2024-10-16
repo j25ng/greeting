@@ -8,13 +8,16 @@ import java.util.*;
 
 @Controller
 public class GreetingController {
-    private Stack<String> names = new Stack<>();
+    private Stack<People> names = new Stack<>();
 
     @GetMapping("/greeting")
     public String greeting(
             @RequestParam(name = "name", required = false, defaultValue = "HI") String name, Model model) {
 
-        names.add(name);
+        People p = new People();
+        p.name = name;
+        p.num = names.size() + 1;
+        names.add(p);
         model.addAttribute("names", names);
         return "greeting";
     }
