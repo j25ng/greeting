@@ -4,11 +4,11 @@
 - http://localhost:8765
 
 ### RUN
+- 개발 모드에서 실행하는 방법
 ```bash
 $ ./gradlew bootRun
 ```
-
-### OR
+- 배포용 빌드 후 실행하는 방법
 ```bash
 $ ./gradlew build
 $ java -jar build/libs/greeting-0.0.1-SNAPSHOT.jar
