@@ -12,7 +12,9 @@ public class GreetingController {
 
     @GetMapping("/greeting")
     public String greeting(
-            @RequestParam(name = "name", required = false, defaultValue = "HI") String name, Model model) {
+            @RequestParam(name = "name", required = false, defaultValue = "HI") String name,
+            // @RequestParam(name = "num", required = false, defaultValue = "0") int num,
+            Model model) {
 
         People p = new People();
         p.name = name;
