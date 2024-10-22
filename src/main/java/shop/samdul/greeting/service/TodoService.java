@@ -1,4 +1,4 @@
-package shop.samdul.greeting.sevice;
+package shop.samdul.greeting.service;
 
 import shop.samdul.greeting.entity.TodoEntity;
 import shop.samdul.greeting.mapper.TodoMapper;
