@@ -7,5 +7,13 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface TodoMapper {
-    public List<TodoEntity> findAll();
+    List<TodoEntity> findAll();
+
+    TodoEntity findById(Integer id);
+
+    Integer createTodo(TodoEntity todo);
+
+    Integer updateTodo(TodoEntity todo);
+
+    Integer deleteTodo(Integer id);
 }
